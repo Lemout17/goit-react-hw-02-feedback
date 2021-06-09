@@ -1,4 +1,5 @@
 import s from './Statistics.module.scss';
+import PropTypes from 'prop-types';
 
 export default function Statistic({
   good,
@@ -34,3 +35,11 @@ export default function Statistic({
     </div>
   );
 }
+
+Statistic.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};
