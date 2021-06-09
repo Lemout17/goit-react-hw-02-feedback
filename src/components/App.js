@@ -19,8 +19,8 @@ export default class App extends Component {
     }));
   };
 
-  //   countTotalFeedback = () =>
-  //     this.state.good + this.state.neutral + this.state.bad
+  // countTotalFeedback = () =>
+  //   Object.values(this.state).reduce((acc, total) => acc + total, 0);
 
   //   countPositiveFeedbackPercentage = () =>
   //     Math.round(
